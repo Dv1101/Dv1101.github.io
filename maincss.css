@@ -1,0 +1,516 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body{
+  cursor: url('assets/imgs/cursor_light.png'), auto;
+  
+}
+
+body
+{
+  /* background-color: rgba(222, 255, 252, 1);
+  background: radial-gradient(#B2FEFA 6%, #03d4fc);*/
+  
+  /*background-image: url('/img/smartcity-header-6.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;*/
+  background-color:black;
+  color:white;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  zoom: 1;
+  
+}
+
+#bg{
+    background-image: url('assets/imgs/1.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+.video-container {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
+
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+a.nav-link
+{
+  color:white;
+}
+a.nav-link:hover
+{
+  color:rgba(212, 163, 255, 1);
+}
+
+.navbar-nav .nav-item.active .nav-link {
+color: rgba(212, 163, 255, 1); /* Change to the desired color for the active button */
+/* Add any additional styling for the active button */
+}
+
+.popup
+{
+  transition: 0.4s;
+}
+.popup:hover 
+{
+  transform: scale(1.2,1.2);
+  transition: 0.4s;
+}
+
+
+
+@media (max-width: 575.98px) {
+.navmargin {
+  margin-top: 4rem;
+}
+}
+
+.cursor-circle {
+position: fixed;
+top: -2.95px;
+left: -2.95px;
+width: 20px;
+height: 20px;
+border: 0.5px solid #000;
+border-radius: 50%;
+pointer-events: none;
+z-index: 9999;
+border-color:white;
+transition:ease-in-out;
+}
+
+buttontest:hover .cursor-circle {
+width: 24px;
+height: 24px;
+margin: -12px 0 0 -12px;
+}
+
+a:hover .cursor-circle {
+transform: scale(1.5); /* Increase the scale factor as desired */
+}
+
+.nav_fly {
+animation-duration: 3s;
+animation-name: slidein;
+animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+from {
+  margin-left: 100%;
+  width: 0%;
+}
+to {
+  margin-left: 0;
+  width: 100%;
+}
+}
+
+.navclass_display {
+white-space: nowrap;
+display: inline-block;
+}
+
+.nav_fly_left {
+animation-duration: 2s;
+animation-name: slideinn;
+animation-iteration-count: 1;
+}
+
+@keyframes slideinn {
+from {
+  margin-left: -100%;
+  width: 0%;
+}
+to {
+  margin-left: 0;
+  width: 100%;
+}
+}
+
+@keyframes textAnimation {
+0% {
+  
+  filter: blur(20px);
+}
+25% {
+  
+  filter: blur(15px);
+}
+50% {
+  
+  filter: blur(10px);
+}
+75%{
+  
+  filter: blur(5px);
+}
+100% {
+  
+  filter: blur(0);
+}
+}
+
+.animated-text {
+  animation-duration: 2s;
+  animation-name: textAnimation;
+  animation-iteration-count: 1;
+}
+
+#preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000000;
+z-index: 999999999;
+opacity: 1;
+transition: opacity 0.6s ease-out;
+}
+
+.loader {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  #myCard {
+    width: 100%;
+  }
+}
+
+.typing {
+animation: typing 5s steps(100, end), flyIn 1.6s forwards;
+}
+
+@keyframes typing {
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
+}
+
+@keyframes flyIn {
+0% {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+}
+
+.parallax {
+/* The image used */
+background-image: url('assets/imgs/urname.jpg'); 
+
+
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+.parallax {
+  background-image: url('assets/imgs/urname.jpg');
+  background-size: cover;
+  background-position: center top !important; /* Center-cropped vertical effect */
+}
+}
+
+
+/*Timeline css*/
+.timeline {
+position: relative;
+}
+.timeline__progressbar {
+--width: 2px;
+--left: -moz-calc(((15vw / 2) + 15px) - (var(--width) / 2));
+--left: calc(((15vw / 2) + 15px) - (var(--width) / 2));
+position: absolute;
+left: var(--left);
+width: var(--width);
+height: 100%;
+background-color: #10394d;
+z-index: 0;
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+.timeline__progressbar {
+  --width: 3px;
+  --left: -moz-calc(50% - (var(--width) / 2));
+  --left: calc(50% - (var(--width) / 2));
+}
+}
+.timeline__block {
+display: -ms-grid;
+display: grid;
+-ms-grid-columns: 15vw 1fr;
+    grid-template-columns: 15vw 1fr;
+padding-top: 2.5rem;
+padding-bottom: 2.5rem;
+-webkit-box-align: start;
+-webkit-align-items: start;
+   -moz-box-align: start;
+    -ms-flex-align: start;
+        align-items: start;
+}
+@media screen and (min-width: 800px) {
+.timeline__block {
+  -ms-grid-columns: 1fr 15vh 1fr;
+      grid-template-columns: 1fr 15vh 1fr;
+}
+}
+@media screen and (min-width: 800px) {
+.timeline__block__head {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  text-align: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50vh;
+}
+}
+.timeline__block__body {
+grid-column: 2 / -1;
+}
+@media screen and (min-width: 800px) {
+.timeline__block__body {
+  grid-column: 3 / -1;
+}
+}
+.timeline__block__bullet-point {
+position: -webkit-sticky;
+position: sticky;
+top: 50vh;
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+   -moz-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+@media screen and (min-width: 800px) {
+.timeline__block__bullet-point {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+}
+.timeline__block__circle {
+display: inline-block;
+width: 2rem;
+height: 2rem;
+border: 0.5px solid #3fafd6;
+background-color: #192c48;
+border-radius: 50%;
+}
+
+@media screen and (max-width: 799px) {
+.timeline__block__title {
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+}
+@media screen and (min-width: 800px) {
+.timeline__block__title {
+  line-height: 0;
+}
+}
+
+
+
+
+.timeline__block__title {
+  font-size:20px;
+  font-weight:bold;
+  font-style:italic;
+  color:#3fafd6;
+  
+}
+  
+.timeline__block__text{
+  font-size:16px;
+}
+
+.text_grey{
+  color:grey;
+}
+
+.blur_txt{
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.card > h3{
+  color:#3fafd6;
+}
+
+.card > h5{
+  font-style:italic;
+}
+
+
+/*.image_project {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}*/
+
+/*
+@media (min-width: 768px) {
+  .image_project {
+      max-width:200px;
+  }
+}*/
+
+.my-element {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .my-element {
+      width: 100%;
+  }
+}
+
+.image_project {
+  width: 100%;
+  height: 100%;
+  border-radius: 17px;
+  object-fit: cover;
+}
+
+
+.wikipedia_btn {
+color: #ffffff;
+font-size: 14px;
+border-radius: 24px;
+border: solid 1px #3866a3;
+text-shadow: 3px 3px 1px #528ECC;
+box-shadow: inset 0px 1px 0px 0px #BBDAF7;
+text-decoration: none;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+font-family: 'Comic Sans MS';
+background: linear-gradient(154deg, #63B8EE 25%, #468CCF 75%);
+display: inline-flex;
+align-items: center;
+padding: 0;
+}
+.wikipedia_btn:hover {
+background: linear-gradient(154deg, #468CCF 25%, #63B8EE 75%);
+}
+.wikipedia_btn-text {
+position: relative;
+padding: 10px 11px;
+}
+.wikipedia_btn-icon {
+position: relative;
+border-right: 1px solid #ffffff29;
+box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+padding: 10px 13px;
+}
+
+.git_project_btn {
+color: #000;
+font-size: 16px;
+border-radius: 50px;
+border: solid 1px #3866a3;
+text-shadow: 5px 5px 9px #528ECC;
+box-shadow: inset 1px 1px 0px 0px #BBDAF7;
+text-decoration: none;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+font-family: 'Comic Sans MS';
+background: linear-gradient(227deg, #33ff69 33%, #00ffee 77%);
+display: inline-flex;
+align-items: center;
+padding: 0;
+}
+.git_project_btn:hover {
+background: linear-gradient(227deg, #00ffee 33%, #33ff69 77%);
+}
+.git_project_btn-text {
+position: relative;
+padding: 10px 15px;
+}
+.git_project_btn-icon {
+position: relative;
+border-right: 1px solid #ffffff29;
+box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+padding: 10px 10px;
+}
+.git_project_btn-icon > i {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+font-size: 30px;
+}
+
+.effect_card{
+  transition: 0.6s;
+  backdrop-filter: blur(50px); -webkit-backdrop-filter: blur(50px);
+}
+
+.effect_card:hover{
+  transition: 0.6s;
+  
+  -webkit-box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
+  
+  
+}
+
+
+

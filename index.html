@@ -29,8 +29,297 @@
         <!-- CSS/JS Link -->
         <link rel="stylesheet" href="maincss.css">
         <script type="text/javascript" src="mainjs.js"></script>
+
+        <!--Fonts google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     </head>
     <body>
-        
+        <!--PRE-HIDDEN-DIVS / LOADER AND MOUSE-->
+        <div class="cursor-circle"></div>
+
+        <!--<div id="preloader">
+            <div class="row">
+                <div class="col-6 container-fluid d-flex justify-content-center align-items-center">
+                    <div class="text-center" style="color: rgba(212, 163, 255, 1);">Dv_inf.otech</div>
+                </div>
+            </div>
+
+            <div id="loader" class="loader">
+                <div class="row">
+                    <img src="assets/imgs/loader.gif" />
+                </div>
+                <div class="row container-fluid d-flex justify-content-center align-items-center mt-5">
+                    <h3 id="loading-message text-center" style="color: burlywood;">Loading ...</h3>
+                </div>
+            
+            </div>
+        </div>-->
+        <!--PRE-HIDDEN-DIVS / LOADER AND MOUSE-->
+
+
+        <!--NAVBAR-->
+        <div>
+            <nav class="navbar navbar-expand-lg shadow-5-strong fixed-top navscroll" style="backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(12px);background-color:rgba(0, 0, 0, 0.30);padding:20px;transition: 0.8s;box-shadow: 0 5px 20px rgba(0,0,0,0.98); transform: translateZ(0); ">
+                <a class="navbar-brand" href="index.html" style="color:rgb(255, 255, 255); letter-spacing: 1.4px;
+word-spacing: 0.2px;">
+                      <div class="">
+                        <div class="row">
+                            <div class="col container-fluid d-flex justify-content-center align-items-center" style="margin-left:15px;">
+                                 <div class="text-center animated-text" style="color:rgba(212, 163, 255, 1);">Dv_inf.otech</div>
+                            </div>
+                        </div>
+                      </div>
+                </a>
+
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color:rgba(212, 163, 255, 0.60); transition: 0.8s;">
+                    <span class="navbar-toggler-icon" id="navicon"><i id="navbarexpand" class="fa-solid fa-caret-down" style="color:rgba(212, 163, 255, 1);"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: center;">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item popup nav_fly_left">
+                            <a class="nav-link navclass_display " href="#section1">Home</a>
+                        </li>
+                        <li class="nav-item popup nav_fly_left">
+                            <a class="nav-link navclass_display " href="#section2">About Me</a>
+                        </li>
+                        <li class="nav-item popup nav_fly_left">
+                            <a class="nav-link navclass_display " href="#main_Timeline">Timeline</a>
+                        </li>
+                        <li class="nav-item popup nav_fly_left">
+                            <a class="nav-link navclass_display " href="#section3">Project's</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item  nav-link  nav_fly navclass_display">
+                            <div id="ktime" class="notranslate" align="center" style="transition: 0.8s; font-family: 'Comic Sans MS'"></div>
+                        </li>
+
+                        <li class="nav-item  popup  nav_fly navclass_display">
+                            <a class="nav-link navclass_display" ID="btn_user" runat="server" >Welcome 🙏</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!--NAVBAR-->
+        <!--Background-->
+        <div id="bg" class="" style="">
+            <!--<div class="video-container">
+                <video autoplay muted loop id="myVideo">
+                    <source src="https://uploads-ssl.webflow.com/6475c270c3f3fd0a9eb15db5/647a3fd21d79da9cc0b8fdc5_3D%20Bubbles-transcode.webm" type="video/webm">
+                    <source src="https://uploads-ssl.webflow.com/6475c270c3f3fd0a9eb15db5/647a3fd21d79da9cc0b8fdc5_3D%20Bubbles-transcode.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>-->
+            
+            <div id="navmargin" class="navmargin mt-xs-5 mt-sm-0 mt-md-0" style="padding-top:120px;transition: 0.5s;"></div>
+
+
+            <!--CONTENT/ HOMEPAGE-->
+
+            <!--Section 1-->
+            <div id="section1" class="" style="min-height: 90vh;">
+                <div class="container container-fluid bg-transparent my-6 mt-0" id="home">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 py-6 pb-0 pt-lg-0 Words">
+                            <h3 class="text-primary mb-3">I'm</h3>
+                            <h1 class="display-3 mb-3 typing" style="font-family: 'Caveat', cursive; backdrop-filter: blur(25px);-webkit-backdrop-filter: blur(25px);border-radius:30px;">Dhruv Varia</h1>
+                            <p class="typing" id="footer_header"  style="display: block; min-height: 100px;font-family: 'Courier New', Courier, monospace;"></p>
+                        </div>
+  
+                        <div class="col-lg-6 mb-5">
+                            <img class="img-fluid" src="assets/imgs/home_dev.png" alt="dev_image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Section1-->
+
+            <!--Section2-->
+            <div id="section2">
+                <div class="parallax">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8" style="margin-top:225px; margin-bottom:350px;">
+                            <div class="card mt-3 mb-3 ml-2 mr-2 bg-transparent text-white animate-card" style="border-radius: 20px; border: 1px solid white; backdrop-filter: blur(50px); -webkit-backdrop-filter: blur(50px);">
+                                <div class="row g-0">
+                                    <div class="card-body" style="padding: 35px;">
+                                        <h5 class="card-title">About Me :</h5>
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="assets/imgs/dhruv_bgremoved.png" class="img-fluid rounded-start" style="height: 100%; width: 100%; object-fit: cover; border-radius: 17px;" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p class="card-text p-2" style="font-size: 1.0rem;">
+                                                    Hello there! 👋<br /><br />
+                                                    I come from Vadodara, a city known for its rich cultural heritage in Gujarat, India. Currently, I'm studying Computer Science and Engineering at Parul University, pursuing my B.Tech. degree. I'm really passionate about technology and always eager to learn and explore new things.<br /><br />
+                                                    During my studies, I've had the opportunity to explore different areas within the field, but what truly excites me is software engineering, development, and design. I love creating things and bringing ideas to life through coding.<br /><br />
+                                                    Apart from my love for coding, I enjoy listening to music, watching animes, and going on adventures while traveling.<br /><br />
+                                                    I believe in lifelong learning and constantly strive to expand my knowledge and skills, as it helps me grow both personally and professionally.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_Timeline" style="background-image: url('/assets/imgs/urname2.jpg'); background-attachment: fixed;background-position: center;background-repeat: no-repeat; background-size: cover;">
+                    <div class="row" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+                    backdrop-filter: blur(15px);-webkit-backdrop-filter: blur(15px);">
+                        <div class="col container-fluid m-5">
+                            <span class="text_grey">What I have done so far</span>
+                            <h1 style="font-weight:bold; font-size:24px;">Timeline</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <section class="timeline" >
+                            <div class="container">
+                              <div class="timeline__wrapper">
+                                <div class="timeline__progressbar"></div>
+                                <div class="timeline__block">
+                                  <div class="timeline__block__bullet-point">
+                                    <span class="timeline__block__circle"></span>
+                                  </div>
+                                  <div class="timeline__block__head">
+                                    <h1 class="timeline__block__title">March 2018</h1>
+                                  </div>
+                                  <div class="timeline__block__body">
+                                      <div class="card bg-transparent text-white animate-card" style="border-radius: 20px; border:1px solid white; backdrop-filter: blur(50px);-webkit-backdrop-filter: blur(50px); padding:20px;">
+                                          <h3>Gujarat State Education Board</h3>
+                                          <h5>SSC</h5>
+                                    <p class="timeline__block__text">Secured 95 PR / 82%</p>
+                                    
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="timeline__block ">
+                                  <div class="timeline__block__bullet-point">
+                                    <span class="timeline__block__circle"></span>
+                                  </div>
+                                  <div class="timeline__block__head">
+                                    <h1 class="timeline__block__title">June,2018 - May 2021</h1>
+                                  </div>
+                                  <div class="timeline__block__body">
+                                       <div class="card bg-transparent text-white animate-card" style="border-radius: 20px; border:1px solid white; backdrop-filter: blur(50px);-webkit-backdrop-filter: blur(50px); padding:20px;">
+                                           <h3>The Maharaja Sayajirao University of Baroda</h3>
+                                           <h5>Vadodara, Gujarat, IN</h5>
+                                           <h5>Diploma - Mechanical Engineering</h5>
+                                    <p class="timeline__block__text"></p>
+                                    <p class="timeline__block__text"></p>
+                                          </div>
+                                  </div>
+                                </div>
+  
+                                  <div class="timeline__block">
+                                  <div class="timeline__block__bullet-point">
+                                    <span class="timeline__block__circle"></span>
+                                  </div>
+                                  <div class="timeline__block__head">
+                                    <h1 class="timeline__block__title">June - October, 2021</h1>
+                                  </div>
+                                  <div class="timeline__block__body">
+                                       <div class="card bg-transparent text-white animate-card" style="border-radius: 20px; border:1px solid white; backdrop-filter: blur(50px);-webkit-backdrop-filter: blur(50px); padding:20px;">
+                                           <h3>Larsen & Toubro, Heavy Engineering - Hazira and Vadodara</h3>
+                                           <h5>Junior Engineer Trainee</h5>
+                                    <p class="timeline__block__text">I worked as a supervisor and junior engineer trainee, and gained knowledge of corporate ethics, work standards, work allocation, teamwork, time management, job scheduling, and manufacturing/fabrication work of gasifiers, boilers, heat exchangers, etc.</p>
+                                    
+                                           </div>
+                                  </div>
+                                </div>
+  
+  
+                                  <div class="timeline__block">
+                                  <div class="timeline__block__bullet-point">
+                                    <span class="timeline__block__circle"></span>
+                                  </div>
+                                  <div class="timeline__block__head">
+                                    <h1 class="timeline__block__title">September, 2021 - May, 2024</h1>
+                                  </div>
+                                  <div class="timeline__block__body">
+                                       <div class="card bg-transparent text-white animate-card" style="border-radius: 20px; border:1px solid white; backdrop-filter: blur(50px);-webkit-backdrop-filter: blur(50px); padding:20px;">
+                                           <h3>Parul University, Vadodara</h3>
+                                           <h5>B.Tech - Computer Science and Engineering</h5>
+                                    <p class="timeline__block__text"></p>
+                                    <p class="timeline__block__text"></p>
+                                           </div>
+                                  </div>
+                                </div>
+  
+  
+  
+                                  
+                                <div class="timeline__hider"></div>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+
+
+            <!--Section2-->
+
+                    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--CONTENT/ HOMEPAGE-->
+
+            <footer id="footerbg" class="text-center text-lg-start footer footer-transparent text-light" style="background-color:rgba(0, 0, 0, 0.25);box-shadow: 0 -5px 20px rgba(0,0,0,0.98); border-radius:30px;backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(12px);">
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        
+
+                        <div class="row pb-2">
+                            <div class="col-md-8">
+                                <p>demoooooooooooooooooooooo</p>
+                            </div>
+                            <div class="col-md-4 container-fluid d-flex justify-content-center align-items-center">
+                                <div class="mapouter"><div class="gmap_canvas" style="border-radius: 40px;"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Dv Infotech Solutions Yogiraj Township, D34, Dabhoi - Waghodia Ring Rd, Vadodara, Gujarat 390025&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+
+                
+              </footer>
+
+
+
+        </div>  
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-light" style="background-color:black;">
+            © 2023 Copyright:
+<a class="text-primary" href="https://instagram.com/Dv_inf.otech">Dv_inf.otech All Rights Reserved</a>
+        </div>
+        <!-- Copyright -->
     </body>
 </html>
