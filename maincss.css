@@ -565,6 +565,19 @@ footer {
 
 }
 
+.marqueee img {
+  margin-right: 20px;
+}
+
+@keyframes marqueee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 
 
