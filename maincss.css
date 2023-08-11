@@ -32,6 +32,13 @@ body
     background-attachment: fixed;
 }
 
+#footer_bg{
+  background-image: url('assets/imgs/abstract.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+}
+
 .video-container {
 position: absolute;
 top: 0;

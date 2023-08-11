@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //loader
-window.addEventListener("load", function () {
+/*window.addEventListener("load", function () {
     var loader = document.getElementById("preloader");
     loader.style.opacity = 0;
     setTimeout(function () {
@@ -126,7 +126,7 @@ window.addEventListener("load", function () {
     }, 1000);
 
 
-});
+});*/
 
 
 
