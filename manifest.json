@@ -10,12 +10,12 @@
   "icons": [
 
     {
-      "src": "/assets/imgs/dhruv_512px.png",
+      "src": "assets/imgs/dhruv_512px.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/assets/img/dhruv_192px.png",
+      "src": "assets/img/dhruv_192px.png",
       "sizes": "192x192",
       "type": "image/png"
     }
@@ -25,14 +25,14 @@
 
   "screenshots": [
     {
-      "src": "/assets/img/desk_ss.png",
+      "src": "assets/img/desk_ss.png",
       "sizes": "1611x898",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Home_PortFolio"
     },
     {
-      "src": "/assets/img/mob_ss.png",
+      "src": "assets/img/mob_ss.png",
       "sizes": "598x897",
       "type": "image/webp",
       "form_factor": "narrow",
