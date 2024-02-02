@@ -10,12 +10,12 @@
   "icons": [
 
     {
-      "src": "assets/chromepwa/dhruv_512px.png",
+      "src": "https://dv1101.github.io/assets/chromepwa/dhruv_512px.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "assets/chromepwa/dv_192.png",
+      "src": "https://dv1101.github.io/assets/chromepwa/dv_192.png",
       "type": "image/png",
       "sizes": "192x192"
       
@@ -26,14 +26,14 @@
 
   "screenshots": [
     {
-      "src": "assets/chromepwa/de_ss.webp",
+      "src": "https://dv1101.github.io/assets/chromepwa/de_ss.webp",
       "sizes": "1611x898",
       "type": "image/webp",
       "form_factor": "wide",
       "label": "Home_PortFolio"
     },
     {
-      "src": "assets/chromepwa/mob_ss.webp",
+      "src": "https://dv1101.github.io/assets/chromepwa/mob_ss.webp",
       "sizes": "598x897",
       "type": "image/webp",
       "form_factor": "narrow",
