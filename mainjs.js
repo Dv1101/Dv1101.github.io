@@ -17,6 +17,55 @@ $(document).ready(function ()
             }, 1000);
     }
      clockTime();
+
+
+
+     function showInstallButton() {
+        document.getElementById('popup_install').style.display = 'block';
+    }
+    
+    function hideInstallButton() {
+        document.getElementById('popup_install').style.display = 'none';
+    }
+    
+    let deferredPrompt; // This variable will save the event for later use.
+    
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Check if the prompt was dismissed less than 30 days ago
+        const dismissedAt = localStorage.getItem('dismissedAt');
+        if (dismissedAt && new Date().getTime() - dismissedAt < 1 * 60 * 100) { //30*24*60*60*1000 30days
+           // Prevent Chrome's default install prompt
+            e.preventDefault();
+            return;
+        }
+    
+        // Save the event for later use
+        deferredPrompt = e;
+    
+        // You can choose to show your custom install button here
+        showInstallButton();
+    });
+    
+    // When your custom install button is clicked
+    btnInstall.addEventListener('click', (e) => {
+        // Hide the install button
+        hideInstallButton();
+    
+        // Show the saved install prompt
+        deferredPrompt.prompt();
+    
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the install prompt');
+            } else {
+                console.log('User dismissed the install prompt');
+                // Store the time of dismissal
+                localStorage.setItem('dismissedAt', new Date().getTime());
+            }
+            deferredPrompt = null;
+        });
+    });
 });
 
 //scroll
@@ -82,6 +131,17 @@ $(document).ready(function () {
             
         }
     });
+
+    //profile
+    // hide the div initially
+    $("#popup_install").css("display", "none");
+
+    $("#close-btn-profile").click(function () {
+        // toggle the display property of the div
+        $("#popup_install").toggle();
+    });
+
+
 });
 
 
