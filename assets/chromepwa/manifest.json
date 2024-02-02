@@ -26,16 +26,16 @@
 
   "screenshots": [
     {
-      "src": "assets/imgs/de_ss.png",
+      "src": "assets/imgs/de_ss.webp",
       "sizes": "1611x898",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Home_PortFolio"
     },
     {
-      "src": "assets/imgs/mob_ss.png",
+      "src": "assets/imgs/mob_ss.webp",
       "sizes": "598x897",
-      "type": "image/png",
+      "type": "image/webp",
       "form_factor": "narrow",
       "label": "Home_PortFolio"
     }
