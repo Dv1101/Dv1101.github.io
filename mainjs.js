@@ -313,3 +313,22 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $(".chkbtnnn").click(function () {
+        if ($('.chkbtnnn').attr('aria-expanded') === 'false') {
+            $('#spanexpanddd').removeClass('fa-caret-down');
+            $('#spanexpanddd').addClass('fa-caret-up');
+
+            // Check if screen size is greater than or equal to small breakpoint
+            if (window.matchMedia('(min-width: 768px)').matches) {
+                $('#prj3').attr('src', '/assets/imgs/exp_trc.png');
+            }
+        }
+        else {
+            $('#spanexpanddd').removeClass('fa-caret-up');
+            $('#spanexpanddd').addClass('fa-caret-down');
+            $('#prj3').attr('src', '/assets/imgs/exp_trc.png');
+        }
+    });
+});
+
