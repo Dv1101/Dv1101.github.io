@@ -332,3 +332,49 @@ $(document).ready(function () {
     });
 });
 
+function sendEmail() {
+    // Get form values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    // Construct mailto link
+    var mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1" +
+                     "&to=dhruvvaria1101@gmail.com" +
+                     "&su=" + encodeURIComponent(subject) +
+                     "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message);
+
+    // Open Gmail with composed message
+    window.open(mailtoLink, '_blank');
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cursor = document.querySelector(".cursor-circle");
+
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("mouseenter", () => {
+            cursor.classList.add("expandCircle");
+       
+        });
+
+        link.addEventListener("mouseleave", () => {
+            cursor.classList.remove("expandCircle");
+            
+        });
+    });
+
+    document.querySelectorAll("h1, h2, h3, h4, h5, h6, p").forEach(link => {
+        link.addEventListener("mouseenter", () => {
+            cursor.classList.add("expandCirclee");
+            console.log("hover");
+        });
+
+        link.addEventListener("mouseleave", () => {
+            cursor.classList.remove("expandCirclee");
+            console.log("hover out");
+        });
+    });
+
+});

@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body{
+html, body,a, button{
   cursor: url('assets/imgs/cursor_light.png'), auto;
   
 }
@@ -87,7 +87,7 @@ a.nav-link
 }
 a.nav-link:hover
 {
-  color:rgba(212, 163, 255, 1);
+  color:  rgba(212, 163, 255, 1);
 }
 
 .navbar-nav .nav-item.active .nav-link {
@@ -124,18 +124,43 @@ border-radius: 50%;
 pointer-events: none;
 z-index: 9999;
 border-color:white;
-transition:ease-in-out;
+/* transition:ease-in-out; */
+transition-duration: 0.05s;
 }
 
-buttontest:hover .cursor-circle {
+/* buttontest:hover .cursor-circle {
 width: 24px;
 height: 24px;
 margin: -12px 0 0 -12px;
+} */
+
+/* a:focus .cursor-circle {
+transform: scale(1.5); /* Increase the scale factor as desired */
+/* } */
+
+.cursor-circle.expandCircle {
+
+  border-color: rgba(212, 163, 255, 1);
+  border-width: 4px;
+  width: 15px;
+  height: 15px;
+  top: -1.15px;
+  left: -1.15px;
+  transition-duration: 0.08s;
+
 }
 
-a:hover .cursor-circle {
-transform: scale(1.5); /* Increase the scale factor as desired */
+.cursor-circle.expandCirclee {
+
+  width: 30px;
+  height: 30px;
+  top: -10.50px;
+  left: -10.50px;
+  transition-duration: 0.08s;
+
 }
+
+
 
 .nav_fly {
 animation-duration: 3s;
